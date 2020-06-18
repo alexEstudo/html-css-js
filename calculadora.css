@@ -42,7 +42,7 @@ body
     color: #fff;
     background: #0c2835;
     place-items: center;
-    border: 1px solid rgba(0, 0, 0, .1);
+    border: 1px solid rgba(0,0,0,.1);
 }
 
 .calculator span:active
@@ -67,6 +67,5 @@ body
 .calculator span.equal
 {
     background: #03b1ff;
-    grid-column: span 2;
-    width: 120px;
+    width: 60px;
 }

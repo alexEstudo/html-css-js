@@ -7,10 +7,10 @@
     </head>
     <body>
         <section>
-            <img src="imagens/rolagemFoto/bg.jpg" alt="bg">
-            <img src="imagens/rolagemFoto/moon.png" alt="moon">
-            <img src="imagens/rolagemFoto/mountain.png" alt="mountain">
-            <img src="imagens/rolagemFoto/road.png" alt="road">
+            <img src="imagens/rolagemFoto/bg.jpg" id="bg">
+            <img src="imagens/rolagemFoto/moon.png" id="moon">
+            <img src="imagens/rolagemFoto/mountain.png" id="mountain">
+            <img src="imagens/rolagemFoto/road.png" id="road">
 
             <h2 id="text">Moon Light</h2>
         </section>
@@ -22,7 +22,7 @@
             let road = document.getElementById("road");
             let text = document.getElementById("text");
 
-            window.addEventListener('scroll', function () {
+            window.addEventListener('scroll', function (){
                 var value = window.scrollY;
 
                 bg.style.top = value * 0.5 + 'px';
@@ -31,7 +31,7 @@
                 road.style.top = value * 0.15 + 'px';
                 text.style.top = value * 1 + 'px';
 
-            })
+            });
         </script>
 
     </body>

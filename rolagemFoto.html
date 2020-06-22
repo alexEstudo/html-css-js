@@ -1,20 +1,38 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <title>Efeitos Fotos</title>
-    <link rel="stylesheet" href="rolagemFoto.css">
-</head>
-<body>
-    <section>
-        <img src="imagens/rolagemFoto/bg.jpg" alt="bg">
-        <img src="imagens/rolagemFoto/moon.png" alt="moon">
-        <img src="imagens/rolagemFoto/mountain.png" alt="mountain">
-        <img src="imagens/rolagemFoto/road.png" alt="road">
+    <head>
+        <meta charset="UTF-8">
+        <title>Efeitos Fotos</title>
+        <link rel="stylesheet" href="rolagemFoto.css">
+    </head>
+    <body>
+        <section>
+            <img src="imagens/rolagemFoto/bg.jpg" alt="bg">
+            <img src="imagens/rolagemFoto/moon.png" alt="moon">
+            <img src="imagens/rolagemFoto/mountain.png" alt="mountain">
+            <img src="imagens/rolagemFoto/road.png" alt="road">
 
-        <h2 id="text">Moon Light</h2>
-        
-    </section>
-    
-</body>
+            <h2 id="text">Moon Light</h2>
+        </section>
+
+        <script type="text/javascript">
+            let bg = document.getElementById("bg");
+            let moon = document.getElementById("moon");
+            let mountain = document.getElementById("mountain");
+            let road = document.getElementById("road");
+            let text = document.getElementById("text");
+
+            window.addEventListener('scroll', function () {
+                var value = window.scrollY;
+
+                bg.style.top = value * 0.5 + 'px';
+                moon.style.left = -value * 0.5 + 'px';
+                mountain.style.top = -value * 0.15 + 'px';
+                road.style.top = value * 0.15 + 'px';
+                text.style.top = value * 1 + 'px';
+
+            })
+        </script>
+
+    </body>
 </html>

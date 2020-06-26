@@ -42,7 +42,7 @@ section h2
     top: 50%;
     width: 100%;
     color: #fff;
-    font-size: 7.5em;
+    font-size: 6em;
     text-shadow: 0 5px 10px rgba(0,0,0,.2);
     transform: translate(calc(100% - var(--x) * 2), -50%);
 }

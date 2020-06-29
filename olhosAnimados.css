@@ -15,7 +15,7 @@ body
     align-items: center;
     min-height: 100vh;
     background: #251801;
-    cursor: url('cursor/png'), pointer;
+    /*cursor: url('cursor/png'), pointer;*/
 }
 
 .container
@@ -71,7 +71,7 @@ body
 .container .face .eyes
 {
     position: relative;
-    top: -60px;
+    top: -40px;
     display: flex;
     flex-wrap: wrap;
 }
@@ -100,7 +100,7 @@ body
     background: #333;
     border-radius: 50%;
 }
-
+/*
 .container h2
 {
     position: absolute;
@@ -116,4 +116,4 @@ body
     bottom: 75px;
     font-size: 3em;
     color: #fff;
-}
+}*/

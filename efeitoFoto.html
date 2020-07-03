@@ -7,7 +7,7 @@
         <link rel="stylesheet" href="efeitoFoto.css">
     </head>
     <body>
-        <h2>Efeito foto ScrollMagic</h2>
+        <h2 class="title">Efeito foto ScrollMagic</h2>
         <section></section>
         <div class="container">
             <h2>Foto</h2>
@@ -16,5 +16,12 @@
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis nemo dolore rerum, quae a eveniet dicta ipsum autem sed dolores debitis repellat quibusdam laboriosam dolor facilis esse, dolorum, nobis impedit? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident sed dolorum dolor saepe, necessitatibus ducimus quasi dolorem nam officia, consequatur mollitia quam corporis nisi? Ut accusamus ipsa a minus explicabo. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem cum nemo accusamus fugit possimus sequi autem incidunt. Odit ad commodi est quos molestias tempora quasi distinctio, exercitationem, qui accusantium aliquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, tempora minus dicta velit iure ut adipisci quas repellat tenetur quae quaerat, laboriosam eaque blanditiis debitis nihil facilis quo distinctio voluptate. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis qui eos, vero, autem accusantium officiis iure sit ipsam ipsa illo similique accusamus necessitatibus fuga perferendis sunt a odio repudiandae expedita.<br>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur adipisci provident quisquam reprehenderit, perferendis commodi quod sapiente animi? Voluptates impedit error, suscipit architecto et illo similique neque accusantium quae aliquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio doloribus ex explicabo unde? Aut sunt fugiat, nam qui nobis, maiores molestiae placeat laudantium debitis perspiciatis facilis quasi dignissimos dolores eos.<br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae ipsam dolor delectus. Harum voluptatem cumque sit animi et, minus atque pariatur aliquid vel beatae tempora assumenda laboriosam explicabo ipsum iure! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus eaque molestiae reprehenderit omnis cum, quas optio. Fugiat in aliquid numquam, ad, id, vero animi possimus exercitationem impedit expedita veniam eos.</p>
         </div>
+        <script type="text/javascript">
+            var section = document.querySelector('section');
+            window.addEventListener('scroll', function() {
+                var value = window.scrollY;
+                section.style.clipPath = "circle("+ value +"px at center)";
+            })
+        </script>
     </body>
 </html>

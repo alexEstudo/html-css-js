@@ -96,3 +96,11 @@ body
     height: 120px;
     background: #2196f3;
 }
+
+#digitalClock
+{
+    display: flex;
+    color: #fff;
+    font-size: 4em;
+    margin-top: 20px;
+}

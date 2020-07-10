@@ -24,8 +24,8 @@
             <div id="minutes"></div>
             <div id="seconds"></div>
             <div id="ampm"></div>
-
         </div>
+
         <script type="text/javascript">
             const hr = document.querySelector("#hr");
             const mn = document.querySelector("#mn");
@@ -44,17 +44,17 @@
                 let hour = document.querySelector("#hour");
                 let minutes = document.querySelector("#minutes");
                 let seconds = document.querySelector("#seconds");
-                let ampm = document.querySelector("#ampm");
+                var ampm = document.querySelector("#ampm");
 
                 let h = new Date().getHours();
                 let m = new Date().getMinutes();
                 let s = new Date().getSeconds();
-                let pm = "PM";
+                var am = "AM";
 
                 // verificando se é AM-PM
                 if(h > 12){
                     h = h - 12;
-                    let pm = "AM";
+                    var am = "PM";
                 }
 
                 //adc zero antes dos números de um dígito
@@ -66,7 +66,7 @@
                 hour.innerHTML = h + ":" ;
                 minutes.innerHTML = m + ":";
                 seconds.innerHTML = s + "&nbsp";
-                ampm.innerHTML = pm;
+                ampm.innerHTML = am;
             })
         </script>
     </body>
